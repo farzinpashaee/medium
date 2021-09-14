@@ -30,11 +30,6 @@ public class TransactionAggregationCollector implements Collector<Transaction, T
             if( ta.getMax().compareTo(t.getAmount()) == -1 )
                 ta.setMax(t.getAmount());
 
-            // Calculate Average
-            ta.setAverage( t.getAmount()
-                    .add(ta.getAverage())
-                    .divide(new BigDecimal(2)) );
-
             // Find the latest Transaction Date
             if( ta.getLastTransactionDate() == null ){
                 ta.setLastTransactionDate(t.getDateTime());
@@ -44,6 +39,9 @@ public class TransactionAggregationCollector implements Collector<Transaction, T
 
             // Calculate Total amount
             ta.setTotal( t.getAmount().add(ta.getTotal()) );
+            
+            // Calculate Average
+            ta.setAverage(ta.getTotal().divide(new BigDecimal(ta.getTransactionList().size())));
 
         };
     }
