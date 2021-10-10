@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<response>
+    <header>
+        <requestId>RIDXXXXXXXXXXX02</requestId>
+    </header>
+    <body>
+        <productId>1</productId>
+        <productName>Product Name</productName>
+        <price>119.99</price>
+        <quantity>1</quantity>
+    </body>
+</response>

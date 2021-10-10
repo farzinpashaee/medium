@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<response>
+    <header>
+        <requestId>RIDXXXXXXXXXXX01</requestId>
+    </header>
+    <body>
+        <userId>1</userId>
+        <userName>John Doe</userName>
+        <age>28</age>
+    </body>
+</response>
