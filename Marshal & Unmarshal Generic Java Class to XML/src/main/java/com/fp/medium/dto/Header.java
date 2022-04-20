@@ -14,6 +14,8 @@ public class Header {
 
     @XmlElement( name = "requestId" )
     private String requestId;
+    @XmlElement( name = "status" )
+    private String status;
 
 
 }

@@ -30,14 +30,12 @@ public class GenericClassXmlMapping {
         customerRequest.getHeader().setRequestId("RIDXXXXXXXXXXX01");
         CustomerBody customerBody = new CustomerBody();
         customerBody.setAge(28);
-        customerBody.setUserId(1L);
         customerBody.setUserName("John Doe");
         customerRequest.setBody(customerBody);
 
         Request<ProductBody> productRequest = new Request<>();
         productRequest.getHeader().setRequestId("RIDXXXXXXXXXXX01");
         ProductBody productBody = new ProductBody();
-        productBody.setProductId(1L);
         productBody.setPrice(new BigDecimal("99.99"));
         productBody.setProductName("Product Name");
         productBody.setQuantity(1);
@@ -67,8 +65,8 @@ public class GenericClassXmlMapping {
 
         try {
 
-            String customerXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><response><header><requestId>RIDXXXXXXXXXXX01</requestId></header><body><userId>1</userId><userName>John Doe</userName><age>28</age></body></response>";
-            String productXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><response><header><requestId>RIDXXXXXXXXXXX02</requestId></header><body><productId>1</productId><productName>Product Name</productName><price>119.99</price><quantity>1</quantity></body></response>";
+            String customerXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><response><header><requestId>RIDXXXXXXXXXXX01</requestId><status>SUCCESS</status></header><body><userId>1</userId><userName>John Doe</userName><age>28</age></body></response>";
+            String productXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><response><header><requestId>RIDXXXXXXXXXXX02</requestId><status>SUCCESS</status></header><body><productId>1</productId><productName>Product Name</productName><price>119.99</price><quantity>1</quantity></body></response>";
 
             JAXBContext jaxbContextCustomer = JAXBContext.newInstance(Response.class, CustomerBody.class);
             Unmarshaller customerUnmarshaller = jaxbContextCustomer.createUnmarshaller();
