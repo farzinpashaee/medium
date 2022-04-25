@@ -30,5 +30,4 @@ public class StudentController {
         return studentService.getStudentList();
     }
 
-
 }

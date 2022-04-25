@@ -17,16 +17,9 @@ import java.util.UUID;
 @Table("student")
 public class Student {
 
-    public static Long counter = 2L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
-
-    public static Student generate(){
-        counter++;
-        return new Student(counter, "Name " + counter);
-    }
 
 }
