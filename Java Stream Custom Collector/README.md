@@ -14,4 +14,4 @@ The best way to learn this topic is by example but first, let me share with you 
 
 You may say that all of these can be done by SQL and it is true, but you will find yourself in situations that running complex and expensive aggregation and enrichment queries can easily be avoided by just using this approach.
 
-Read the full article in [farzinpashaeee.medium.com](https://medium.com/@f.pashaeee/java-stream-custom-collector-376409c7af4).
+Read the full article in [farzinpashaeee.medium.com](https://farzinpashaeee.medium.com/java-stream-custom-collector-376409c7af4).
