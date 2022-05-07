@@ -5,4 +5,4 @@ Spring Boot Interceptors are useful tools for intercepting the HTTP request proc
 
 Basically, Interceptor is similar to a Servlet Filter, but in contrast to the latter, It is located after DispatcherServlet and as a result, related HandlerInterceptor class configured inside the application context. Filters are known to be more powerful, they are allowed to exchange the request and response objects that are handed down the chain whereas, Interceptors are just allowed to add some customer custom pre-processing, option of prohibiting the execution, and also custom post-processing.
 
-Read the full article in [farzinpashaeee.medium.com](https://farzinpashaeee.medium.com/x)
+Read the full article in [farzinpashaeee.medium.com](https://farzinpashaeee.medium.com/spring-boot-web-mvc-interceptor-1dc4375fab4d)
