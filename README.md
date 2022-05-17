@@ -12,3 +12,5 @@ This is a repository for [farzinpashaeee.medium.com](https://farzinpashaeee.medi
 - Spring Boot Kafka Integration. [github](https://github.com/farzinpashaee/medium/tree/main/Spring%20Boot%20Web%20MVC%20Interceptor) | [medium](https://farzinpashaeee.medium.com/spring-boot-web-mvc-interceptor-1dc4375fab4d)
 - Spring Boot Web MVC Interceptor. [github](https://github.com/farzinpashaee/medium/tree/main/Spring%20Boot%20Web%20MVC%20Interceptor) | [medium](https://farzinpashaeee.medium.com/spring-boot-web-mvc-interceptor-1dc4375fab4d)
 - Spring Boot Web Filter. [github](https://github.com/farzinpashaee/medium/tree/main/Spring%20Boot%20Web%20MVC%20Filter) | [medium](https://farzinpashaeee.medium.com/spring-boot-web-mvc-filter-642877505c06)
+- Spring Boot Shell. [github](https://github.com/farzinpashaee/medium/tree/main/Spring%20Boot%20Shell) | [medium](https://farzinpashaeee.medium.com/spring-boot-shell-299de8e6aa38)
+
