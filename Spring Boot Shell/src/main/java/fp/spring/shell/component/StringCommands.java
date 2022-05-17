@@ -7,8 +7,8 @@ import org.springframework.shell.standard.ShellOption;
 @ShellComponent
 public class StringCommands {
 
-    @ShellMethod("Add two integers together")
-    public String echo(@ShellOption(value = "-i") String input){
+    @ShellMethod(value= "Echo input message", key="echo")
+    public String echoMethod(@ShellOption(value = "-i", defaultValue = "Some Text" , help = "Text input") String input){
         return input;
     }
 

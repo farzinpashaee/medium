@@ -15,7 +15,7 @@ public class StudentCommands {
     @Autowired
     StudentService studentService;
 
-    @ShellMethod("Add two integers together")
+    @ShellMethod("Find the student details")
     public String find(@ShellOption(value = "-id") Long id){
         Optional<Student> studentOptional =  studentService.getStudentById(id);
         if(((Optional) studentOptional).isPresent())
