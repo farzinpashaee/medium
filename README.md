@@ -1,3 +1,4 @@
+[![N|Solid](https://miro.medium.com/max/1196/1*n2ghh3K5Wk5aiUToD5PGaQ.png)](https://farzinpashaeee.medium.com)
 # Medium
 This is a repository for [farzinpashaeee.medium.com](https://farzinpashaeee.medium.com/) postes.
 
