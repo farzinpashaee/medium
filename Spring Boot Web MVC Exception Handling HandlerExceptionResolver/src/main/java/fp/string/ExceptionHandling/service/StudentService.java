@@ -13,7 +13,7 @@ public class StudentService {
 
     public Student findStudentById( Long id ) throws InvalidIdException, ServiceDownTimeException {
         Calendar calendar = Calendar.getInstance();
-        if( calendar.get(Calendar.HOUR_OF_DAY) == 1  )
+        if( calendar.get(Calendar.HOUR_OF_DAY) != 1  )
             throw new ServiceDownTimeException("1-2 AM is service downtime!");
         if( id == null ) throw new InvalidIdException("Invalid ID");
         return new Student().setId(id).setName("Name " + id);
