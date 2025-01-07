@@ -1,9 +1,9 @@
-<a href="https://farzinpashaeee.medium.com/">
-<img src="https://miro.medium.com/max/1196/1*n2ghh3K5Wk5aiUToD5PGaQ.png" alt="drawing" width="500"/>
+<a href="https://codestreamlab.com/">
+<img src="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*_fDZCPplt1urBXP_EGa7gg.png" alt="drawing" width="500"/>
 </a>
 
 # Medium
-This is a repository for [farzinpashaeee.medium.com](https://farzinpashaeee.medium.com/) postes.
+This is a repository for [codestreamlab.com](https://codestreamlab.com/) postes.
 
 ## Topics
 
