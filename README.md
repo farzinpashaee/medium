@@ -1,9 +1,8 @@
 <a href="https://codestreamlab.com/">
-<img src="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*_fDZCPplt1urBXP_EGa7gg.png" alt="drawing" width="500"/>
+<img src="https://cdn-images-1.medium.com/v2/resize:fit:375/1*oxHgbXmRxgvmM2WLZS_BTQ@2x.png" alt="drawing" width="300"/>
 </a>
 
-# Medium
-This is a repository for [codestreamlab.com](https://codestreamlab.com/) postes.
+Code Stream Lab is a medium publication dedicated to empowering software engineers, developers, and technology enthusiasts. At Code Stream Lab, we share insights, tutorials, and in-depth articles on programming practices, software architecture, and the latest industry trends.
 
 ## Topics
 
