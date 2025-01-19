@@ -1,0 +1,1 @@
+protoc.exe --proto_path="C:\Users\Farzin\Work Area\git\medium\Technology\Protocol Buffers\Java" --java_out="C:\Users\Farzin\Work Area\git\medium\Technology\Protocol Buffers\Java" "C:\Users\Farzin\Work Area\git\medium\Technology\Protocol Buffers\Java\Book.proto"
