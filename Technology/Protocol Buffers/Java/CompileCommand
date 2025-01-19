@@ -1,1 +1,1 @@
-protoc.exe --proto_path="path to proto" --java_out="path to out files" "path to protofile"
+protoc.exe --proto_path="path to proto" --java_out="path to out files" "path to proto file"
