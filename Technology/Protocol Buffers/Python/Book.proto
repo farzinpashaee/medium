@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Book {
+  optional int32 id = 1;
+  optional string title = 2;
+  optional string author = 3;
+}
+
+message Author {
+  optional string name = 1;
+}
