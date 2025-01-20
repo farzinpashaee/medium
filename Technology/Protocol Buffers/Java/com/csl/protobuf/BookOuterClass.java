@@ -44,11 +44,11 @@ public final class BookOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nBook.proto\"\\\n\004Book\022\017\n\002id\030\001 \001(\005H\000\210\001\001\022\022\n" +
-      "\005title\030\002 \001(\tH\001\210\001\001\022\023\n\006author\030\003 \001(\tH\002\210\001\001B\005" +
-      "\n\003_idB\010\n\006_titleB\t\n\007_author\"$\n\006Author\022\021\n\004" +
-      "name\030\001 \001(\tH\000\210\001\001B\007\n\005_nameB\024\n\020com.csl.prot" +
-      "obufP\001b\006proto3"
+      "\n\nBook.proto\"e\n\004Book\022\017\n\002id\030\001 \001(\005H\000\210\001\001\022\022\n" +
+      "\005title\030\002 \001(\tH\001\210\001\001\022\034\n\006author\030\003 \001(\0132\007.Auth" +
+      "orH\002\210\001\001B\005\n\003_idB\010\n\006_titleB\t\n\007_author\"$\n\006A" +
+      "uthor\022\021\n\004name\030\001 \001(\tH\000\210\001\001B\007\n\005_nameB\024\n\020com" +
+      ".csl.protobufP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

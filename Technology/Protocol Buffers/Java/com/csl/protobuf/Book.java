@@ -28,7 +28,6 @@ private static final long serialVersionUID = 0L;
   }
   private Book() {
     title_ = "";
-    author_ = "";
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
@@ -112,10 +111,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AUTHOR_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object author_ = "";
+  private com.csl.protobuf.Author author_;
   /**
-   * <code>optional string author = 3;</code>
+   * <code>optional .Author author = 3;</code>
    * @return Whether the author field is set.
    */
   @java.lang.Override
@@ -123,39 +121,19 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000004) != 0);
   }
   /**
-   * <code>optional string author = 3;</code>
+   * <code>optional .Author author = 3;</code>
    * @return The author.
    */
   @java.lang.Override
-  public java.lang.String getAuthor() {
-    java.lang.Object ref = author_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      author_ = s;
-      return s;
-    }
+  public com.csl.protobuf.Author getAuthor() {
+    return author_ == null ? com.csl.protobuf.Author.getDefaultInstance() : author_;
   }
   /**
-   * <code>optional string author = 3;</code>
-   * @return The bytes for author.
+   * <code>optional .Author author = 3;</code>
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString
-      getAuthorBytes() {
-    java.lang.Object ref = author_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      author_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public com.csl.protobuf.AuthorOrBuilder getAuthorOrBuilder() {
+    return author_ == null ? com.csl.protobuf.Author.getDefaultInstance() : author_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -179,7 +157,7 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.GeneratedMessage.writeString(output, 2, title_);
     }
     if (((bitField0_ & 0x00000004) != 0)) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 3, author_);
+      output.writeMessage(3, getAuthor());
     }
     getUnknownFields().writeTo(output);
   }
@@ -198,7 +176,8 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.GeneratedMessage.computeStringSize(2, title_);
     }
     if (((bitField0_ & 0x00000004) != 0)) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(3, author_);
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(3, getAuthor());
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -372,13 +351,19 @@ private static final long serialVersionUID = 0L;
 
     // Construct using com.csl.protobuf.Book.newBuilder()
     private Builder() {
-
+      maybeForceBuilderInitialization();
     }
 
     private Builder(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       super(parent);
-
+      maybeForceBuilderInitialization();
+    }
+    private void maybeForceBuilderInitialization() {
+      if (com.google.protobuf.GeneratedMessage
+              .alwaysUseFieldBuilders) {
+        getAuthorFieldBuilder();
+      }
     }
     @java.lang.Override
     public Builder clear() {
@@ -386,7 +371,11 @@ private static final long serialVersionUID = 0L;
       bitField0_ = 0;
       id_ = 0;
       title_ = "";
-      author_ = "";
+      author_ = null;
+      if (authorBuilder_ != null) {
+        authorBuilder_.dispose();
+        authorBuilder_ = null;
+      }
       return this;
     }
 
@@ -430,7 +419,9 @@ private static final long serialVersionUID = 0L;
         to_bitField0_ |= 0x00000002;
       }
       if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.author_ = author_;
+        result.author_ = authorBuilder_ == null
+            ? author_
+            : authorBuilder_.build();
         to_bitField0_ |= 0x00000004;
       }
       result.bitField0_ |= to_bitField0_;
@@ -457,9 +448,7 @@ private static final long serialVersionUID = 0L;
         onChanged();
       }
       if (other.hasAuthor()) {
-        author_ = other.author_;
-        bitField0_ |= 0x00000004;
-        onChanged();
+        mergeAuthor(other.getAuthor());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -498,7 +487,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              author_ = input.readStringRequireUtf8();
+              input.readMessage(
+                  getAuthorFieldBuilder().getBuilder(),
+                  extensionRegistry);
               bitField0_ |= 0x00000004;
               break;
             } // case 26
@@ -638,83 +629,125 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object author_ = "";
+    private com.csl.protobuf.Author author_;
+    private com.google.protobuf.SingleFieldBuilder<
+        com.csl.protobuf.Author, com.csl.protobuf.Author.Builder, com.csl.protobuf.AuthorOrBuilder> authorBuilder_;
     /**
-     * <code>optional string author = 3;</code>
+     * <code>optional .Author author = 3;</code>
      * @return Whether the author field is set.
      */
     public boolean hasAuthor() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
-     * <code>optional string author = 3;</code>
+     * <code>optional .Author author = 3;</code>
      * @return The author.
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        author_ = s;
-        return s;
+    public com.csl.protobuf.Author getAuthor() {
+      if (authorBuilder_ == null) {
+        return author_ == null ? com.csl.protobuf.Author.getDefaultInstance() : author_;
       } else {
-        return (java.lang.String) ref;
+        return authorBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional string author = 3;</code>
-     * @return The bytes for author.
+     * <code>optional .Author author = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        author_ = b;
-        return b;
+    public Builder setAuthor(com.csl.protobuf.Author value) {
+      if (authorBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        author_ = value;
       } else {
-        return (com.google.protobuf.ByteString) ref;
+        authorBuilder_.setMessage(value);
       }
+      bitField0_ |= 0x00000004;
+      onChanged();
+      return this;
     }
     /**
-     * <code>optional string author = 3;</code>
-     * @param value The author to set.
-     * @return This builder for chaining.
+     * <code>optional .Author author = 3;</code>
      */
     public Builder setAuthor(
-        java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
-      author_ = value;
+        com.csl.protobuf.Author.Builder builderForValue) {
+      if (authorBuilder_ == null) {
+        author_ = builderForValue.build();
+      } else {
+        authorBuilder_.setMessage(builderForValue.build());
+      }
       bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string author = 3;</code>
-     * @return This builder for chaining.
+     * <code>optional .Author author = 3;</code>
+     */
+    public Builder mergeAuthor(com.csl.protobuf.Author value) {
+      if (authorBuilder_ == null) {
+        if (((bitField0_ & 0x00000004) != 0) &&
+          author_ != null &&
+          author_ != com.csl.protobuf.Author.getDefaultInstance()) {
+          getAuthorBuilder().mergeFrom(value);
+        } else {
+          author_ = value;
+        }
+      } else {
+        authorBuilder_.mergeFrom(value);
+      }
+      if (author_ != null) {
+        bitField0_ |= 0x00000004;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>optional .Author author = 3;</code>
      */
     public Builder clearAuthor() {
-      author_ = getDefaultInstance().getAuthor();
       bitField0_ = (bitField0_ & ~0x00000004);
+      author_ = null;
+      if (authorBuilder_ != null) {
+        authorBuilder_.dispose();
+        authorBuilder_ = null;
+      }
       onChanged();
       return this;
     }
     /**
-     * <code>optional string author = 3;</code>
-     * @param value The bytes for author to set.
-     * @return This builder for chaining.
+     * <code>optional .Author author = 3;</code>
      */
-    public Builder setAuthorBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
-      author_ = value;
+    public com.csl.protobuf.Author.Builder getAuthorBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
-      return this;
+      return getAuthorFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>optional .Author author = 3;</code>
+     */
+    public com.csl.protobuf.AuthorOrBuilder getAuthorOrBuilder() {
+      if (authorBuilder_ != null) {
+        return authorBuilder_.getMessageOrBuilder();
+      } else {
+        return author_ == null ?
+            com.csl.protobuf.Author.getDefaultInstance() : author_;
+      }
+    }
+    /**
+     * <code>optional .Author author = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilder<
+        com.csl.protobuf.Author, com.csl.protobuf.Author.Builder, com.csl.protobuf.AuthorOrBuilder> 
+        getAuthorFieldBuilder() {
+      if (authorBuilder_ == null) {
+        authorBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+            com.csl.protobuf.Author, com.csl.protobuf.Author.Builder, com.csl.protobuf.AuthorOrBuilder>(
+                getAuthor(),
+                getParentForChildren(),
+                isClean());
+        author_ = null;
+      }
+      return authorBuilder_;
     }
 
     // @@protoc_insertion_point(builder_scope:Book)

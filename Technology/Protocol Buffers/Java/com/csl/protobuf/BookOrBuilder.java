@@ -38,19 +38,17 @@ public interface BookOrBuilder extends
       getTitleBytes();
 
   /**
-   * <code>optional string author = 3;</code>
+   * <code>optional .Author author = 3;</code>
    * @return Whether the author field is set.
    */
   boolean hasAuthor();
   /**
-   * <code>optional string author = 3;</code>
+   * <code>optional .Author author = 3;</code>
    * @return The author.
    */
-  java.lang.String getAuthor();
+  com.csl.protobuf.Author getAuthor();
   /**
-   * <code>optional string author = 3;</code>
-   * @return The bytes for author.
+   * <code>optional .Author author = 3;</code>
    */
-  com.google.protobuf.ByteString
-      getAuthorBytes();
+  com.csl.protobuf.AuthorOrBuilder getAuthorOrBuilder();
 }

@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option go_package = "com/csl/Book.pb";
+
 message Book {
   optional int32 id = 1;
   optional string title = 2;

@@ -1,0 +1,2 @@
+protoc.exe --proto_path="path to proto" --java_out="path to out files" "path to proto file"
+protoc.exe --proto_path=. --go_out=. --go_opt=paths=source_relative Book.proto
