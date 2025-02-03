@@ -1,0 +1,2 @@
+protoc -I=.  --java_out=. --grpc-java_out=. Book.proto
+protoc.exe --proto_path="path to proto" --java_out="path to out files" --grpc-java_out="path to grpc service" "path to proto file"

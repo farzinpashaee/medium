@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.csl.protobuf";
+option java_multiple_files = true;
+
+message Book {
+  optional int32 id = 1;
+  optional string title = 2;
+  optional Author author = 3;
+}
+
+message Author {
+  optional string name = 1;
+}
+
+message BookPreview {
+  optional int32 id = 1;
+}
+
+service BookStoreService {
+    rpc preview(BookPreview) returns (Book);
+}
